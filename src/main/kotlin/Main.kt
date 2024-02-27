@@ -22,7 +22,7 @@ suspend fun main(args: Array<String>) {
         }
     }
     println(
-        "Generation to ${parsedArgs.output_path} finished in ${
+        "Generated ${parsedArgs.parallel_branches * parsedArgs.branch_length} BPMN models at ${parsedArgs.output_path} in ${
             formatDuration(
                 generationTime
             )
