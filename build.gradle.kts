@@ -11,8 +11,7 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-cli-jvm
-    implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.6")
+    implementation("com.github.ajalt.clikt:clikt:4.2.2")
     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
     implementation("org.camunda.bpm.model:camunda-bpmn-model:7.20.0")
