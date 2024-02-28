@@ -1,9 +1,12 @@
+package parallel
+
+import formatDuration
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kotlin.system.measureTimeMillis
 
 suspend fun main(args: Array<String>) {
-    val parsedArgs = BPMNModelGenerator()
+    val parsedArgs = BPMNParallelModelGeneratorArgs()
     parsedArgs.main(args)
 
     // Run generation in parallel using coroutines
@@ -26,14 +29,6 @@ suspend fun main(args: Array<String>) {
             )
         }."
     )
-}
-
-fun formatDuration(durationMillis: Long): String {
-    return if (durationMillis < 1000) {
-        "$durationMillis ms"
-    } else {
-        "${durationMillis / 1000.0} s"
-    }
 }
 
 fun doGeneration(branches: Int, branchLength: Int, outputPath: String) {

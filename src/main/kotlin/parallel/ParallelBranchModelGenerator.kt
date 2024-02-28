@@ -1,3 +1,5 @@
+package parallel
+
 import org.camunda.bpm.model.bpmn.Bpmn
 import org.camunda.bpm.model.bpmn.builder.ParallelGatewayBuilder
 import java.io.File

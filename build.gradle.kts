@@ -29,6 +29,7 @@ kotlin {
 
 tasks.shadowJar {
     manifest {
-        attributes["Main-Class"] = "MainKt"
+//        attributes["Main-Class"] = "parallel.ParallelBranchMainKt"
+        attributes["Main-Class"] = "blocks.BlockMainKt"
     }
 }
