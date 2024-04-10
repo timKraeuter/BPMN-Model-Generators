@@ -1,9 +1,12 @@
+# BPMN CLI tools
+
 This repository contains the source code for three CLI tools:
 1. **BPMNBlockModelGenerator**: Generate a BPMN model with a varying number of predefined blocks (see details below).
 2. **BPMNParallelBranchModelGenerator** Generate a BPMN model with x parallel branches of length y (see details below).
 3. **BPMNStatPrinter** Print statistics for all BPMN models in a given folder (see details below).
 
-All CLI tools are prebuilt and contained in ./prebuilt-tools. You can check their arguments using the help command:
+All CLI tools use the _Camunda BPMN model library_ to do the heavy lifting.
+The CLI tools are prebuilt and contained in ./prebuilt-tools. You can check their arguments using the help command:
 
 ```bash
 java -jar ./prebuilt-tools/BPMNParallelBranchModelGenerator.jar --help
