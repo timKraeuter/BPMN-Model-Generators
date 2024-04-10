@@ -4,7 +4,10 @@ This repository contains the source code for three CLI applications:
 3. **BPMNStatPrinter** Print statistics for all BPMN models in a given folder (see details below).
 
 # BPMNBlockModelGenerator
+TODO
 
 # BPMNParallelBranchModelGenerator
+TODO
 
 # BPMNStatPrinter
+TODO
